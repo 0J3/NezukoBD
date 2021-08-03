@@ -1,0 +1,61 @@
+// for when you're disconnected from the internet
+@use './loading';
+.fixClipping-3qAKRb {
+	// height: min-content !important;
+	// width: max-content !important;
+	// position: fixed !important;
+	// left: 50vw !important;
+	// top: 25px !important;
+	// transform: translate(-50%, 0);
+	// video {
+	// 	display: none;
+	// }
+	pointer-events: none;
+	.content-1-zrf2 {
+		display: none;
+	}
+	.problems-3mgf6w {
+		opacity: 0;
+		pointer-events: none;
+	}
+	&::before {
+		height: min-content !important;
+		width: max-content !important;
+		position: fixed !important;
+		left: 50vw !important;
+		top: 25px !important;
+		transform: translate(-50%, 0);
+		content: "It appears your Nezuko is having issues connecting to Discord's Servers";
+		color: #0000;
+		background: #0000;
+		background: loading.$img;
+		backdrop-filter: brightness(0.9) blur(5px);
+		padding-top: 50px;
+		padding-bottom: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
+		background-size: 100%;
+		background-position: center center;
+		background-position-x: center;
+		background-position-y: center;
+		z-index: 5000;
+		filter: blur(10px) brightness(0.8);
+		opacity: 0.9;
+	}
+	&::after {
+		height: min-content !important;
+		width: max-content !important;
+		position: fixed !important;
+		left: 50vw !important;
+		top: 25px !important;
+		transform: translate(-50%, 0);
+		content: "It appears your Nezuko is having issues connecting to Discord's Servers";
+		color: #fff;
+		background: #0000;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
+		z-index: 5001;
+	}
+}
