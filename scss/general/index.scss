@@ -1,0 +1,32 @@
+// Contains code for background and shit - fuck off i don't care about writing comments- oh wait i just wrote one FUCKGFDSOIHOIJGOKIJHDOILF
+
+@use '../vars';
+@use './monaco';
+@use './send';
+@use './popout';
+@use './sidebar';
+
+.wrapper-2qzCYF,
+.panels-j1Uci_ {
+	background: transparent;
+}
+
+body,
+html,
+.appMount-3lHmkl {
+	--background-primary: transparent;
+	--background-secondary: transparent;
+	--background-tertiary: transparent;
+}
+.appMount-3lHmkl::before {
+	content: ' ';
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	background: vars.$bg-primary;
+	filter: brightness(0.5) blur(10px);
+	background-size: 100% contain;
+}

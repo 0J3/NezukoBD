@@ -1,0 +1,15 @@
+.monaco-editor,
+.monaco-editor-background,
+.monaco-editor .inputarea.ime-input,
+.monaco-editor .margin,
+.floating-window #bd-editor-controls,
+.floating-window-titlebar {
+	background: #2a2b2c3b !important;
+	backdrop-filter: blur(32px);
+}
+.floating-window-titlebar {
+	background: #2a2b2caa;
+}
+.minimap.slider-mouseover {
+	display: none;
+}
