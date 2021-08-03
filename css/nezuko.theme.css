@@ -173,6 +173,12 @@
   background: transparent !important;
 }
 
+.autocomplete-1vrmpx {
+  background: #2a2b2caa !important;
+  backdrop-filter: blur(32px) !important;
+  border-radius: 10px !important;
+}
+
 .wrapper-2qzCYF,
 .panels-j1Uci_ {
   background: transparent;
