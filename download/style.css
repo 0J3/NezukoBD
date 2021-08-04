@@ -20,3 +20,6 @@ body > div.error {
 body.error > div.error {
 	display: block;
 }
+a {
+	color: rgb(102, 149, 238);
+}
