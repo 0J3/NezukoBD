@@ -32,3 +32,9 @@ a {
 	position: relative;
 	top: 3px;
 }
+.nezukoType::after {
+	content:'BD'
+}
+.pc .nezukoType::after {
+	content:'PC'
+}

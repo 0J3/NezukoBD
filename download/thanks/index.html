@@ -18,12 +18,19 @@
 				class="round nezukopng"
 			/>Thanks!
 		</h1>
-		<p>Thanks for downloading NezukoBD!</p>
+		<p>Thanks for downloading <span class="nezukoType">Nezuko</span>!</p>
 		<img src="../nezuko.gif" alt="Nezuko_Load_Gif" /><br />
-		<small
+		<small class="nezukoType"
 			>Did your download fail? Click
-			<a href="https://0j3.github.io/NezukoBD/NezukoCord.theme.css">here</a>,
-			then press CTRL+S to manually download NezukoBD</small
+			<a href="https://0j3.github.io/NezukoBD/NezukoCord.theme.css" id="l">here</a>,
+			then press CTRL+S to manually download Nezuko</small
 		>
+		<script>
+			if(document.location.hash.replace('#','')==='pc'){
+				document.body.classList.add('pc')
+				document.getElementById('l').setAttribute('href','https://github.com/0J3/NezukoBD/archive/refs/heads/master.zip')
+				document.location.hash=''
+			}
+		</script>
 	</body>
 </html>
