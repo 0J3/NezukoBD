@@ -1,7 +1,7 @@
 /**
  * @name NezukoCord
  * @author 0J3#0001 and discorc#1234
- * @version 1.0.0
+ * @version 1.0.1
  * @description If you like Nezuko, you'll like NezukoCord
  * @website https://nezuko.nora.lgbt/
  * @source https://github.com/0J3/NezukoBD
@@ -26,6 +26,11 @@
 
 .minimap.slider-mouseover {
   display: none;
+}
+
+.scrollableContainer-2NUZem {
+  background: #2a2b2c7a;
+  backdrop-filter: blur(16px);
 }
 
 .userPopout-xaxa6l {
