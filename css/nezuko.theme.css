@@ -291,6 +291,11 @@
   box-shadow: rgba(47, 49, 54, 0.6) 0px 1px 0px inset;
 }
 
+.embedWrapper-lXpS3L .grid-1nZz7S {
+  backdrop-filter: blur(32px);
+  background: #2a2b2c34;
+}
+
 .wrapper-2qzCYF,
 .panels-j1Uci_ {
   background: transparent;
