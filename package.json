@@ -1,0 +1,9 @@
+{
+	"scripts": {
+		"watch": "./watch.sh",
+		"build": "sass scss:css"
+	},
+	"devDependencies": {
+		"sass": "^1.37.4"
+	}
+}
