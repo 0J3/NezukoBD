@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>NezukoBD Downloader</title>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script>
+			const download = (data, filename) => {
+				const link = document.createElement('a');
+				link.setAttribute(
+					'href',
+					'data:text/plain;charset=utf-8, ' + encodeURIComponent(data)
+				);
+				link.setAttribute('download', filename);
+				link.click();
+			};
+		</script>
+		<style>
+			body {
+				background: rgb(28, 27, 34);
+				color: #fff;
+				padding: 10px 10px;
+				position: fixed;
+				left: 0;
+				top: 0;
+				display: block;
+				width: 100vw;
+				height: 100vh;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+					Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			}
+			body.error > div.downloading {
+				display: none;
+			}
+			body > div.error {
+				display: none;
+			}
+			body.error > div.error {
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="downloading">
+			<h1>NezukoBD should be downloading!</h1>
+			<p>Have this gif of Nezuko while you wait!</p>
+			<img src="./nezuko.gif" alt="Nezuko_Load" />
+		</div>
+		<div class="error">
+			<h1>An Error has occurred!</h1>
+			<p>Details: <span id="details">Script failed to set details(?)</span></p>
+		</div>
+		<script>
+			(async () => {
+				const error = e => {
+					console.error(e);
+					try {
+						document.getElementById('details').innerHTML = e;
+					} catch (error) {}
+					document.body.classList.add('error');
+				};
+				try {
+					const v = await axios.get(
+						'https://raw.githubusercontent.com/0J3/NezukoBD/master/NezukoCord.theme.css'
+					);
+					download(v.data, 'NezukoCord.theme.css', error);
+				} catch (e) {
+					error(e);
+				}
+			})();
+		</script>
+	</body>
+</html>
