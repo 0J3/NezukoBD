@@ -26,3 +26,9 @@ a {
 .round {
 	border-radius: 100%;
 }
+.nezukopng {
+	height: 1em;
+	margin-right: 10px;
+	position: relative;
+	top: 3px;
+}
