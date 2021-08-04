@@ -23,3 +23,6 @@ body.error > div.error {
 a {
 	color: rgb(102, 149, 238);
 }
+.round {
+	border-radius: 100%;
+}
