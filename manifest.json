@@ -1,0 +1,9 @@
+{
+    "name": "NezukoBD",
+    "description": "Nezuko!",
+    "version": "1.0.1",
+    "author": "0J3#0001",
+    "theme": "NezukoCord.theme.css",
+    "consent": [],
+    "license": "AGPL-3.0"
+}
