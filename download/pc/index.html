@@ -58,7 +58,7 @@
 				};
 				try {
 					const v = await axios.get(
-						'https://codeload.github.com/0J3/NezukoBD/zip/refs/heads/master'
+						'https://github.com/0J3/NezukoBD/blob/master/download/pc/NezukoBD.zip?raw=true'
 					);
 					download(v.data, 'NezukoCord-PC.zip');
 					setTimeout(
