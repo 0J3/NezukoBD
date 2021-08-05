@@ -1,7 +1,10 @@
+@use '../../style/mixins';
 body.bddl,
 body.dlList {
-  &.bddl header {
-    display: none;
+  &.bddl {
+    header {
+      display: none;
+    }
   }
   padding: 10px 10px;
   position: fixed;
@@ -37,5 +40,31 @@ body.dlList {
     margin-right: 10px;
     position: relative;
     top: 3px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body.dlList {
+    overflow: hidden;
+  }
+  body.dlList .dls {
+    pointer-events: none;
+    & > * {
+      opacity: 0.5;
+    }
+
+    &::before {
+      content: 'Cannot access downloads on a mobile device! (If you are on a desktop, try full-screening your browser)';
+      @include mixins.PrimaryText();
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      width: 100vw;
+      position: fixed;
+      z-index: 50;
+      transform: translate(-50%, -50%);
+      padding: 10px 10px;
+      background: #2a2b2caa;
+    }
   }
 }

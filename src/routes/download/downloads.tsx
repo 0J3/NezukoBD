@@ -34,40 +34,42 @@ class Downloads extends Component {
             ), aswell as their .gpg signatures.
           </p>
           {/* <img src={nezukogif} alt="Nezuko_Load_Gif" /> */}
-          <Card
-            LogoComponent={BDLogo}
-            Title={'BetterDiscord'}
-            Description={
-              <span>
-                No Description Provided
-                <br />
-                This is <b>NOT</b> a bug; I'm just lazy
-              </span>
-            }
-            Buttons={[
-              {
-                text: 'Download',
-                destination: '/download',
-              },
-            ]}
-          />
-          <Card
-            LogoComponent={PCLogo}
-            Title={'Powercord'}
-            Description={
-              <span>
-                No Description Provided
-                <br />
-                This is <b>NOT</b> a bug; I'm just lazy
-              </span>
-            }
-            Buttons={[
-              {
-                text: 'Download',
-                destination: '/download/pc',
-              },
-            ]}
-          />
+          <div class={style.dls}>
+            <Card
+              LogoComponent={BDLogo}
+              Title={'BetterDiscord'}
+              Description={
+                <span>
+                  No Description Provided
+                  <br />
+                  This is <b>NOT</b> a bug; I'm just lazy
+                </span>
+              }
+              Buttons={[
+                {
+                  text: 'Download',
+                  destination: '/download',
+                },
+              ]}
+            />
+            <Card
+              LogoComponent={PCLogo}
+              Title={'Powercord'}
+              Description={
+                <span>
+                  No Description Provided
+                  <br />
+                  This is <b>NOT</b> a bug; I'm just lazy
+                </span>
+              }
+              Buttons={[
+                {
+                  text: 'Download',
+                  destination: '/download/pc',
+                },
+              ]}
+            />
+          </div>
         </div>
       </div>
     );
