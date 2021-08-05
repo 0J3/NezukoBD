@@ -16,23 +16,25 @@ export class Card extends Component<{
 }> {
   render() {
     return (
-      <div class={style.Card}>
-        <this.props.LogoComponent size="64px" className={style.logo} />
-        <h1
-          class={style.Title}
-          data-isTitle={true}
-          data-titleText={this.props.Title}
-        >
-          {this.props.Title}
-        </h1>
-        <p class={style.Description}>{this.props.Description}</p>
-        {this.props.Buttons.map((btn: btn) => {
-          return (
-            <Link class={style.Button} href={btn.destination}>
-              <MozBtn>{btn.text}</MozBtn>
-            </Link>
-          );
-        })}
+      <div class={style.CardWrapper}>
+        <div class={style.Card}>
+          <this.props.LogoComponent size="64px" className={style.logo} />
+          <h1
+            class={style.Title}
+            data-isTitle={true}
+            data-titleText={this.props.Title}
+          >
+            {this.props.Title}
+          </h1>
+          <p class={style.Description}>{this.props.Description}</p>
+          {this.props.Buttons.map((btn: btn) => {
+            return (
+              <Link class={style.Button} href={btn.destination}>
+                <MozBtn>{btn.text}</MozBtn>
+              </Link>
+            );
+          })}
+        </div>
       </div>
     );
   }
