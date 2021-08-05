@@ -6,9 +6,15 @@
 }
 .nezukoBg {
   @include mixins.Bg;
-  width: calc(100vw-40px);
+  width: 50vw;
   height: 50vh;
   display: block;
   background-size: 175% !important;
   background-position: center center;
+}
+@media screen and (max-width: 600px) {
+  .nezukoBg {
+    width: calc(100vw - 40px);
+    // height: 50vh;
+  }
 }
