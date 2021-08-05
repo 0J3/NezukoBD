@@ -11,7 +11,7 @@
 }
 @for $i from 1 to 4 {
   .bg-#{$i} {
-    background: url('../bgs/#{$i}.jpg');
+    background: url('../bgs/#{$i}.webp');
     background-size: 100%;
     background-position-x: center;
     background-position-y: center;

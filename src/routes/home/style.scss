@@ -1,5 +1,27 @@
+@use "sass:math";
+@function divisibleBy($x, $y) {
+  @return math.floor(math.div($x, $y)) * $y == $x;
+}
+@keyframes bg {
+  @for $i from 1 to 6 {
+    #{math.div($i,5)*100}#{'%'} {
+      background: url('../../components/bgs/#{$i}.webp');
+    }
+  }
+  @for $i from 0 to 10 {
+    @if (divisibleBy($i, 2)) {
+      #{$i*10}#{'%'} {
+        background-position: 75% 75%;
+      }
+    } @else {
+      #{$i*10}#{'%'} {
+        background-position: center center;
+      }
+    }
+  }
+}
 .home {
-	padding: 56px 20px;
-	min-height: 100%;
-	width: 100%;
+  padding: 56px 20px;
+  min-height: 100%;
+  width: 100%;
 }

@@ -1,34 +1,12 @@
-@use "sass:math";
-@function divisibleBy($x, $y) {
-  @return math.floor(math.div($x, $y)) * $y == $x;
-}
-@keyframes bg {
-  @for $i from 1 to 6 {
-    #{$i/5*100}#{'%'} {
-      background: url('../bgs/#{$i}.jpg');
-    }
-  }
-  @for $i from 0 to 10 {
-    @if (divisibleBy($i, 2)) {
-      #{$i*10}#{'%'} {
-        background-position: 75% 75%;
-      }
-    } @else {
-      #{$i*10}#{'%'} {
-        background-position: center center;
-      }
-    }
-  }
-}
 .Card {
   display: inline-block;
   padding: 20px 20px;
   border-radius: 10px 10px 10px 10px;
   background: #1a1a1a;
-  background: url('../bgs/1.jpg');
+  background: url('../bgs/#{random(2)+1}.webp');
   animation: bg 5s infinite;
   background-position: center center;
-  background-size: cover;
+  // background-size: cover;
   margin: 10px 10px;
   width: max-content;
   @mixin centerY() {
