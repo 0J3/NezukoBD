@@ -1,0 +1,38 @@
+body.bddl {
+  header {
+    display: none;
+  }
+  background: rgb(28, 27, 34);
+  color: #fff;
+  padding: 10px 10px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  &.error > div.downloading {
+    display: none;
+  }
+  & > div.error {
+    display: none;
+  }
+  &.error > div.error {
+    display: block;
+  }
+  a {
+    color: rgb(102, 149, 238);
+  }
+  .round {
+    border-radius: 100%;
+  }
+  .nezukopng {
+    height: 1em;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+  }
+}

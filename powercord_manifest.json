@@ -1,9 +1,0 @@
-{
-	"name": "NezukoCord",
-	"description": "A Nezuko-based Discord Theme",
-	"version": "1.0.0",
-	"author": "0J3#0001",
-	"license": "AGPL-3.0",
-	"consent": "true",
-	"theme": "NezukoCord.theme.css"
-}
