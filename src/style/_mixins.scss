@@ -8,19 +8,20 @@
 @function divisibleBy($x, $y) {
   @return math.floor(math.div($x, $y)) * $y == $x;
 }
+$bgImages: 5;
 @keyframes bg {
-  @for $i from 1 to 6 {
-    #{math.div($i,5)*100}#{'%'} {
-      background: url('https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/#{$i}.webp');
+  @for $i from 1 to $bgImages + 1 {
+    #{math.div($i,$bgImages)*100}#{'%'} {
+      background-image: url('https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/#{$i}.webp');
     }
   }
-  @for $i from 0 to 10 {
+  @for $i from 0 to ($bgImages * 2) {
     @if (divisibleBy($i, 2)) {
-      #{$i*10}#{'%'} {
+      #{$i/($bgImages*2)*100}#{'%'} {
         background-position: 75% 75%;
       }
     } @else {
-      #{$i*10}#{'%'} {
+      #{$i/($bgImages*2)*100}#{'%'} {
         background-position: center center;
       }
     }
@@ -30,6 +31,7 @@
   }
 }
 @mixin Bg($time: 10s) {
-  background: url('https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/1.webp');
+  background-image: url('https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/1.webp');
   animation: bg $time infinite;
+  will-change: background-image, background-position;
 }

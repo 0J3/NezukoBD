@@ -11,7 +11,7 @@
 }
 @for $i from 1 to 4 {
   .bg-#{$i} {
-    background: url('https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/#{$i}.webp');
+    background: url('https://github.com/0J3/NezukoBD/raw/Site/src/components/bgs/#{$i}.webp');
     background-size: 100%;
     background-position-x: center;
     background-position-y: center;
@@ -40,7 +40,7 @@
   padding: 0 15px;
   min-width: 50px;
   text-align: center;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(0, 0, 0, 0.2);
   text-decoration: none;
   color: #fff;
   will-change: background-color;
@@ -48,7 +48,7 @@
 
 .header nav a:hover,
 .header nav a:active {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .header nav a.active {
