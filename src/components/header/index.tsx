@@ -4,8 +4,14 @@ import style from './style.scss';
 
 const Header: FunctionalComponent = () => {
   return (
-    <header class={style.header}>
-      <h1>Preact App</h1>
+    <header
+      class={
+        style.header +
+        ' ' +
+        (style['bg-' + Math.floor(Math.random() * 4 + 1)] ?? style['bg-1'])
+      }
+    >
+      <h1>NezukoCord</h1>
       <nav>
         <Link activeClassName={style.active} href="/">
           Home
