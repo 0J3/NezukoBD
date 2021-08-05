@@ -3,6 +3,7 @@ import { Component, h } from 'preact';
 
 import nezukopng from './nezuko.png';
 import nezukogif from './nezuko.gif';
+import MozButton from '../../components/mozAlike/btn';
 
 class DlThanks extends Component<{
   type?: string;
@@ -75,6 +76,9 @@ class DlThanks extends Component<{
             </a>
             .
           </small>
+          <MozButton onClick={() => document.location.replace('/')}>
+            Back
+          </MozButton>
         </div>
       </div>
     );
