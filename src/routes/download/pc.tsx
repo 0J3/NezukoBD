@@ -7,7 +7,7 @@ import nezukogif from './nezuko.gif';
 
 import axios from 'axios';
 
-class BDDlPage extends Component {
+class PCDlPage extends Component {
   componentDidMount() {
     document.body.classList.add(style.bddl);
     (async () => {
@@ -50,4 +50,4 @@ class BDDlPage extends Component {
     );
   }
 }
-export default BDDlPage;
+export default PCDlPage;

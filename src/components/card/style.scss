@@ -1,0 +1,30 @@
+.Card {
+  display: inline-block;
+  padding: 20px 20px;
+  border-radius: 10px 10px 10px 10px;
+  background: #1a1a1a;
+  margin: 10px 10px;
+  width: max-content;
+  @mixin centerY() {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .logo {
+    height: 64px;
+    width: 64px;
+    @include centerY();
+  }
+  .Title,
+  .Description {
+    text-align: center;
+    width: 100%;
+  }
+  .Button,
+  .Button > button {
+    cursor: pointer;
+  }
+  .Button > button {
+    @include centerY();
+  }
+}
