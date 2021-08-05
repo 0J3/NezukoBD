@@ -34,4 +34,5 @@ $bgImages: 5;
   background-image: url('https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/1.webp');
   animation: bg $time infinite;
   will-change: background-image, background-position;
+  background-repeat: no-repeat;
 }
