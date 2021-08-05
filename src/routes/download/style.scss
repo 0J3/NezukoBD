@@ -43,7 +43,7 @@ body.dlList {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   body.dlList {
     overflow: hidden;
   }
@@ -51,6 +51,9 @@ body.dlList {
     pointer-events: none;
     & > * {
       opacity: 0.5;
+      left: calc(50vw - 20px);
+      position: relative;
+      transform: translate(-50%, 0);
     }
 
     &::before {
