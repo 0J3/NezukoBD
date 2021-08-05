@@ -6,6 +6,11 @@ const Home: FunctionalComponent = () => {
     <div class={style.home}>
       <h1>NezukoCord</h1>
       <p>that one theme that every demon slayer enjoyer needs</p>
+      <p>
+        oh also have some nezuko while you think about downloading this theme
+        (or while you think about nezuko idk)
+      </p>
+      <div class={style.nezukoBg}></div>
     </div>
   );
 };

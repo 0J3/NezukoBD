@@ -3,7 +3,7 @@
   padding: 20px 20px;
   border-radius: 10px 10px 10px 10px;
   background: #1a1a1a;
-  background: url('../bgs/#{random(2)+1}.webp');
+  background: url('https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/#{random(2)+1}.webp');
   animation: bg 5s infinite;
   background-position: center center;
   // background-size: cover;
