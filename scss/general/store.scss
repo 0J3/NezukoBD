@@ -1,0 +1,11 @@
+@use '../vars';
+.applicationStore-1pNvnv {
+	// background: transparent !important;
+	@include vars.randombg;
+	@include vars.bg;
+	background-repeat: no-repeat;
+
+	.premiumContainer-2Iux5m {
+		backdrop-filter: brightness(0.5) blur(4px);
+	}
+}

@@ -1,9 +1,11 @@
 {
 	"scripts": {
 		"watch": "./watch.sh",
-		"build": "sass scss:css"
+		"build": "sass scss:css",
+		"bdCopy": "nodemon --watch css/nezuko.theme.css --exec \"cp ./css/nezuko.theme.css ${HOME}/.config/BetterDiscord/themes/nezukoDev.theme.css\""
 	},
 	"devDependencies": {
+		"nodemon": "^2.0.12",
 		"sass": "^1.37.4"
 	}
 }

@@ -7,6 +7,9 @@
 @use './autocomplete';
 @use './newServer';
 @use './embed';
+@use './store';
+@use './channelHeader';
+@use './servers';
 
 .wrapper-2qzCYF,
 .panels-j1Uci_ {
@@ -29,6 +32,19 @@ html,
 	width: 100vw;
 	height: 100vh;
 	background: vars.$bg-primary;
-	filter: brightness(0.5) blur(10px);
+	filter: brightness(0.5); //blur(10px);
 	background-size: 100% contain;
+}
+.timestamp-3ZCmNB,
+.timestampInline-yHQ6fX,
+.PronounDB-pronouns-text {
+	color: #aaa !important;
+}
+.selectable-3dP3y- {
+	transition: margin-left 0.5s, filter 0.5s;
+	filter: #{'grayscale' }();
+}
+.selected-1Tbx07 {
+	margin-left: 10px;
+	filter: none;
 }

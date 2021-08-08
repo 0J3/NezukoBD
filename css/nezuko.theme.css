@@ -125,10 +125,45 @@
   display: none;
 }
 
-.container-2Pjhx- {
-  color: #bdbdbd;
-  backdrop-filter: brightness(0.95) blur(32px);
+.sidebar-2K8pFh .container-2Pjhx- {
   border-radius: 0;
+  color: #bdbdbd;
+}
+.sidebar-2K8pFh .containerDefault-3tr_sE {
+  padding-top: 0;
+  margin-top: 16px;
+}
+.sidebar-2K8pFh .containerDefault-3tr_sE .iconVisibility-fhcwiH {
+  border-radius: 0;
+  color: #ddd;
+  width: 240px !important;
+  padding-right: 0 !important;
+  border-radius: 0;
+}
+.sidebar-2K8pFh .containerDefault-3tr_sE .iconVisibility-fhcwiH .overflow-WK9Ogt {
+  color: #ccc;
+}
+.sidebar-2K8pFh .iconVisibility-sTNpHs {
+  border-radius: 0;
+  border-radius: 8px;
+  color: #fff;
+}
+.sidebar-2K8pFh .content-3YMskv {
+  width: 240px;
+}
+.sidebar-2K8pFh::before {
+  content: " ";
+  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/5.webp");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position-x: center;
+  background-position-y: center;
+  width: inherit;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(0.5);
 }
 
 .bd-addon-card {
@@ -301,6 +336,22 @@
   background: #2a2b2c34;
 }
 
+.applicationStore-1pNvnv {
+  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/4.webp");
+  background-size: auto 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.applicationStore-1pNvnv .premiumContainer-2Iux5m {
+  backdrop-filter: brightness(0.5) blur(4px);
+}
+
+.guilds-1SWlCJ {
+  background-size: auto 100%;
+  background-position: center center;
+  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/5.webp");
+}
+
 .wrapper-2qzCYF,
 .panels-j1Uci_ {
   background: transparent;
@@ -323,8 +374,24 @@ html,
   width: 100vw;
   height: 100vh;
   background: url("https://cdn.discordapp.com/attachments/834637860094476308/872019470409957426/external-content.duckduckgo.com.png");
-  filter: brightness(0.5) blur(10px);
+  filter: brightness(0.5);
   background-size: 100% contain;
+}
+
+.timestamp-3ZCmNB,
+.timestampInline-yHQ6fX,
+.PronounDB-pronouns-text {
+  color: #aaa !important;
+}
+
+.selectable-3dP3y- {
+  transition: margin-left 0.5s, filter 0.5s;
+  filter: grayscale();
+}
+
+.selected-1Tbx07 {
+  margin-left: 10px;
+  filter: none;
 }
 
 .fixClipping-3qAKRb {
@@ -381,6 +448,23 @@ html,
 .gm-store-search {
   background: #000a;
   backdrop-filter: blur(6px);
+}
+
+.quickswitcher-3JagVE, .quickswitcher-3JagVE * {
+  z-index: 2;
+}
+.quickswitcher-3JagVE::before {
+  content: " ";
+  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/2.webp");
+  background-size: auto 100%;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  filter: brightness(0.3);
 }
 
 /*# sourceMappingURL=nezuko.theme.css.map */
