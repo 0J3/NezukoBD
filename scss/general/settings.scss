@@ -39,10 +39,29 @@
 .contentColumn-2hrIYH {
 	background: #2a2b2c42;
 	backdrop-filter: blur(32px);
-	border-radius: 10px;
+	// border-radius: 10px;
 }
 
 // connections
 .connectionHeader-2MDqhu {
 	background: transparent !important;
+}
+
+// sidebar
+.sidebar-CFHs9e {
+	background: #2a2b2c42;
+	backdrop-filter: blur(32px);
+	scrollbar-width: none !important;
+	overflow-y: visible !important;
+	.info-1VyQPT {
+		&:last-child::after {
+			content: 'NezukoCord #{vars.$version}';
+			display: block;
+			padding-top: 7px;
+			color: #aaa;
+			font-size: 1em;
+			text-transform: capitalize;
+		}
+		text-align: center;
+	}
 }

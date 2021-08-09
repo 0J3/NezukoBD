@@ -168,7 +168,7 @@
 }
 .sidebar-2K8pFh::before {
   content: " ";
-  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/3.webp");
+  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/2.webp");
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position-x: center;
@@ -222,11 +222,28 @@
 .contentColumn-2hrIYH {
   background: #2a2b2c42;
   backdrop-filter: blur(32px);
-  border-radius: 10px;
 }
 
 .connectionHeader-2MDqhu {
   background: transparent !important;
+}
+
+.sidebar-CFHs9e {
+  background: #2a2b2c42;
+  backdrop-filter: blur(32px);
+  scrollbar-width: none !important;
+  overflow-y: visible !important;
+}
+.sidebar-CFHs9e .info-1VyQPT {
+  text-align: center;
+}
+.sidebar-CFHs9e .info-1VyQPT:last-child::after {
+  content: "NezukoCord 1.0.1";
+  display: block;
+  padding-top: 7px;
+  color: #aaa;
+  font-size: 1em;
+  text-transform: capitalize;
 }
 
 .autocomplete-1vrmpx {
@@ -352,7 +369,7 @@
 }
 
 .applicationStore-1pNvnv {
-  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/3.webp");
+  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/4.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -364,7 +381,7 @@
 .guilds-1SWlCJ::before {
   background-size: cover;
   background-position: center center;
-  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/4.webp");
+  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/2.webp");
   content: " ";
   height: 100%;
   width: 100%;
@@ -477,7 +494,7 @@ html,
 }
 .quickswitcher-3JagVE::before {
   content: " ";
-  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/5.webp");
+  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/6.webp");
   background-size: cover;
   background-position: center center;
   width: 100%;
