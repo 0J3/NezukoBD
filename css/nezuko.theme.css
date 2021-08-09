@@ -125,8 +125,11 @@
   display: none;
 }
 
+.sidebar-2K8pFh {
+  --width: 240px;
+  width: var(--width) !important;
+}
 .sidebar-2K8pFh .container-2Pjhx- {
-  border-radius: 0;
   color: #bdbdbd;
 }
 .sidebar-2K8pFh .containerDefault-3tr_sE {
@@ -134,26 +137,38 @@
   margin-top: 16px;
 }
 .sidebar-2K8pFh .containerDefault-3tr_sE .iconVisibility-fhcwiH {
+  backdrop-filter: brightness(0.7) blur(6px);
   border-radius: 0;
   color: #ddd;
-  width: 240px !important;
-  padding-right: 0 !important;
+  width: calc($width - 8px) !important;
+  padding-right: 8px !important;
   border-radius: 0;
 }
 .sidebar-2K8pFh .containerDefault-3tr_sE .iconVisibility-fhcwiH .overflow-WK9Ogt {
   color: #ccc;
 }
 .sidebar-2K8pFh .iconVisibility-sTNpHs {
+  backdrop-filter: brightness(0.7) blur(6px);
   border-radius: 0;
   border-radius: 8px;
   color: #fff;
+  width: var(--width) !important;
+  border-radius: 0;
+}
+.sidebar-2K8pFh .iconVisibility-sTNpHs .content-1x5b-n {
+  border-radius: 0;
+  margin-left: 0;
+  padding: 3px 8px;
 }
 .sidebar-2K8pFh .content-3YMskv {
   width: 240px;
 }
+.sidebar-2K8pFh .scroller-RmtA4e {
+  overflow-y: auto !important;
+}
 .sidebar-2K8pFh::before {
   content: " ";
-  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/5.webp");
+  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/3.webp");
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position-x: center;
@@ -337,8 +352,8 @@
 }
 
 .applicationStore-1pNvnv {
-  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/4.webp");
-  background-size: auto 100%;
+  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/3.webp");
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -346,10 +361,17 @@
   backdrop-filter: brightness(0.5) blur(4px);
 }
 
-.guilds-1SWlCJ {
-  background-size: auto 100%;
+.guilds-1SWlCJ::before {
+  background-size: cover;
   background-position: center center;
-  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/5.webp");
+  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/4.webp");
+  content: " ";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(0.5);
 }
 
 .wrapper-2qzCYF,
@@ -455,8 +477,8 @@ html,
 }
 .quickswitcher-3JagVE::before {
   content: " ";
-  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/2.webp");
-  background-size: auto 100%;
+  background: url("https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/5.webp");
+  background-size: cover;
   background-position: center center;
   width: 100%;
   height: 100%;
@@ -465,6 +487,10 @@ html,
   left: 0;
   z-index: 1;
   filter: brightness(0.3);
+}
+
+.card-3RzMcx {
+  background: transparent;
 }
 
 /*# sourceMappingURL=nezuko.theme.css.map */

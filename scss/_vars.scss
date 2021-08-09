@@ -4,9 +4,9 @@ $bg-userpopout: url('https://cdn.discordapp.com/attachments/834637860094476308/8
 $solid-bg: #5c698f; // if we ever need a solid bg
 
 @mixin randombg() {
-	background: url('https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/#{random(4)+1}.webp');
+	background: url('https://raw.githubusercontent.com/0J3/NezukoBD/Site/src/components/bgs/#{random(5)+1}.webp');
 }
 @mixin bg() {
-	background-size: auto 100%;
+	background-size: cover;
 	background-position: center center;
 }

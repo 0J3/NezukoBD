@@ -1,7 +1,10 @@
 @use '../vars';
 .sidebar-2K8pFh {
+	--width: 240px;
+	$width: var(--width);
+	width: $width !important;
 	@mixin channelBase {
-		//backdrop-filter: brightness(0.7) blur(6px); // blur(32px);
+		backdrop-filter: brightness(0.7) blur(6px); // blur(32px);
 		border-radius: 0;
 	}
 	@mixin category() {
@@ -10,17 +13,24 @@
 		.overflow-WK9Ogt {
 			color: #ccc;
 		}
-		width: 240px !important;
-		padding-right: 0 !important;
+		width: calc($width - 8px) !important;
+		padding-right: 8px !important;
 		border-radius: 0;
 	}
 	@mixin channel() {
 		@include channelBase();
 		border-radius: 8px;
 		color: #fff;
+		width: $width !important;
+		border-radius: 0;
+		.content-1x5b-n {
+			border-radius: 0;
+			margin-left: 0;
+			padding: 3px 8px;
+		}
 	}
 	@mixin dm() {
-		@include channelBase();
+		// @include channelBase();
 		color: rgb(189, 189, 189);
 	}
 
@@ -39,6 +49,9 @@
 	}
 	.content-3YMskv {
 		width: 240px;
+	}
+	.scroller-RmtA4e {
+		overflow-y: auto !important;
 	}
 	&::before {
 		content: ' ';

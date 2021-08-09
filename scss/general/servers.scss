@@ -1,5 +1,12 @@
 @use '../vars';
-.guilds-1SWlCJ {
+.guilds-1SWlCJ::before {
 	@include vars.bg;
 	@include vars.randombg;
+	content: ' ';
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	filter: brightness(0.5);
 }
